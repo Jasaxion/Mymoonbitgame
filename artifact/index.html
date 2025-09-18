@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lantern Clash · 花灯争锋</title>
+    <link rel="stylesheet" href="wasm4.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(circle at top, #f2e7d5, #101728 70%);
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        color: #f2e7d5;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+      }
+      header {
+        text-align: center;
+        padding: 1.5rem 1rem 0.5rem;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0.12rem;
+      }
+      header p {
+        margin: 0.25rem 0;
+        font-size: 0.95rem;
+      }
+      .tips {
+        font-size: 0.85rem;
+        opacity: 0.9;
+        margin-bottom: 1.2rem;
+      }
+      wasm4-app {
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      footer {
+        margin-top: auto;
+        padding: 1.5rem 1rem;
+        font-size: 0.8rem;
+        opacity: 0.8;
+        text-align: center;
+      }
+      a {
+        color: #f2e7d5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Lantern Clash · 花灯争锋</h1>
+      <p>在花灯长街上与孙悟空、哪吒、功夫熊猫进行热血对决。</p>
+      <div class="tips">
+        操作：方向键移动 · Z 攻击 · X 防御（Chrome 135+，开启声音可感受更多反馈）
+      </div>
+    </header>
+    <script>
+      globalThis.WASM4_CART_URL = "game.wasm";
+    </script>
+    <div id="devtools"></div>
+    <script src="wasm4.js"></script>
+    <wasm4-app></wasm4-app>
+    <footer>
+      由 Jade Lantern Studio 使用 MoonBit + WASM-4 开发 · 版权自持的像素素材
+    </footer>
+  </body>
+</html>
