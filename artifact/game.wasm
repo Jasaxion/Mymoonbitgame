@@ -1,0 +1,1 @@
+This is a placeholder. Run `moon build --target wasm` and copy the generated `target/wasm/release/build/lantern-clash.wasm` here to play the game.
